@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            min-height: 100px;
+            background: #1C4370;
+            /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(-90deg, #1C4370, white);
+            /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(-90deg, #1C4370, white);
+            /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(-90deg, #1C4370, white);
+            /* For Firefox 3.6 to 15 */
+            background: linear-gradient(-90deg, #1C4370, white);
+            /* Standard syntax */
+        }
+        
+        .header_wrapper {
+            min-height: 75px;
+            width: 75%;
+            float: right;
+        }
+        
+        .logo {
+            min-height: 65px;
+            float: left;
+            width: 10%;
+            margin-left: 12%;
+            margin-top: 4px;
+        }
+        
+        .logo img {
+            height: 80px;
+            width: 90px;
+        }
+        
+        .menu {
+            min-height: 60px;
+            background-color: #1C4370;
+            width: 86%;
+            float: right;
+            margin-top: 40px;
+        }
+        
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .menu ul li {
+            float: left;
+            border-right: 1px solid;
+            border-left: 1px solid black;
+            position: relative;
+        }
+        
+        .menu ul li:last-child {
+            border-right: none;
+        }
+        
+        .menu ul li:first-child {
+            border-left: none;
+        }
+        
+        .menu ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 20px 30px;
+            transition: 1s;
+            font-family: Arial;
+            font-size: 1em;
+        }
+        
+        .menu ul li a:hover {
+            background-color: #111111;
+            transform: rotate(360deg)scale(1.2);
+        }
+        
+        .menu ul li ul {
+            background-color: #2C2C33;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left: -999999px;
+        }
+        
+        .menu ul li:hover ul {
+            left: 0px;
+            width: 250px
+        }
+        
+        .menu ul li ul li {
+            float: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: 1px solid black;
+        }
+        
+        .menu ul li ul li:first-child {
+            border-top: 1px solid black;
+        }
+        
+        .menu ul li ul li a {
+            padding: 10px 25px
+        }
+        
+        .single_gallary {
+            width: 20%;
+            float: left;
+            margin: 2%;
+            border: 1px solid blue;
+            height: 350px;
+            background-color: #1E4571;
+        }
+        
+        .photo_section {
+            height: 200px;
+            width: 200px;
+            margin: 38px auto;
+        }
+        
+        .photo_section:hover img {
+            transform: scale(1.5);
+        }
+        
+        .photo_section img {
+            height: 150px;
+            width: 200px;
+            transition: 1s;
+        }
+        
+        .caption {
+            text-align: center;
+        }
+        
+        .caption p {
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="image/img.png" alt="">
+        </div>
+        <div class="header_wrapper">
+
+            <div class="menu">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">COURSES</a>
+                        <ul>
+                            <li><a href="">WEB DESIGN</a></li>
+                            <li><a href="">WORDPRESS</a></li>
+                            <li><a href="">GRAPHIC DESIGN</a></li>
+                            <li><a href="">DIGITAL MARKETING</a></li>
+                            <li><a href="">ANDROID APP DEVELOPMENT</a></li>
+                            <li><a href="">SEO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">OUR MENTORS</a></li>
+                    <li><a href="">SIGN UP</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="gallary">
+        <div class="single_gallary">
+            <div class="photo_section">
+                <img src="image/tiger.jpg" alt="tiger_image">
+            </div>
+            <div class="caption">
+                <p>Md. Ahmedul Hoque</p>
+            </div>
+        </div>
+    </div>
+    <div class="gallary">
+        <div class="single_gallary">
+            <div class="photo_section">
+                <img src="image/tiger.jpg" alt="tiger_image">
+            </div>
+            <div class="caption">
+                <p>Md. Ahmedul Hoque</p>
+            </div>
+        </div>
+    </div>
+    <div class="gallary">
+        <div class="single_gallary">
+            <div class="photo_section">
+                <img src="image/tiger.jpg" alt="tiger_image">
+            </div>
+            <div class="caption">
+                <p>Md. Ahmedul Hoque</p>
+            </div>
+        </div>
+    </div>
+    <div class="gallary">
+        <div class="single_gallary">
+            <div class="photo_section">
+                <img src="image/tiger.jpg" alt="tiger_image">
+            </div>
+            <div class="caption">
+                <p>Md. Ahmedul Hoque</p>
+            </div>
+        </div>
+    </div>
+    <div class="gallary">
+        <div class="single_gallary">
+            <div class="photo_section">
+                <img src="image/tiger.jpg" alt="tiger_image">
+            </div>
+            <div class="caption">
+                <p>Md. Ahmedul Hoque</p>
+            </div>
+        </div>
+    </div>
+    <div class="gallary">
+        <div class="single_gallary">
+            <div class="photo_section">
+                <img src="image/tiger.jpg" alt="tiger_image">
+            </div>
+            <div class="caption">
+                <p>Md. Ahmedul Hoque</p>
+            </div>
+        </div>
+    </div>
+    <div class="gallary">
+        <div class="single_gallary">
+            <div class="photo_section">
+                <img src="image/tiger.jpg" alt="tiger_image">
+            </div>
+            <div class="caption">
+                <p>Md. Ahmedul Hoque</p>
+            </div>
+        </div>
+    </div>
+    <div class="gallary">
+        <div class="single_gallary">
+            <div class="photo_section">
+                <img src="image/tiger.jpg" alt="tiger_image">
+            </div>
+            <div class="caption">
+                <p>Md. Ahmedul Hoque</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
